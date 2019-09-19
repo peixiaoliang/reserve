@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url(style.css);
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.header{
+    width: 100%;
+    height:auto;
+    background: #000000;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+.resgiterBtn{
+    width: 6rem;
+    height: 1.2rem;
+    background: #1089ee;
+    position: absolute;
+    bottom: 0.6rem;
+    left: 50%;
+    margin-left:-3rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius:10px;
+}
+.container2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.resgisterbg{
+    width: 8.46rem;
+    height: 8rem;
+    background: #ffffff;
+    position: absolute;
+    top:5rem;
+    margin-left: -4.23rem;
+    left: 50%;
+}
+.agreeBtn{
+    width: 4rem;
+    height: 1.2rem;
+    background: #1089ee;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-left:-2rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius:10px;
+}
+.container3{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.xuqiu{
+    width: 100%;
+    height:auto;
+    margin-top: 0.6rem;
+}
+.xuqiu img{
+    width: 100%;
+    height:auto;
+}
+.personal_title{
+    padding: 0 0.5rem;
+    font-size: 0.4rem;
+    margin:1rem 0.5rem 0.3rem; 
+    font-weight: bolder;
+
+}
+.informationForm{
+    padding: 0 1rem;
+}
+.informationBox label{
+    font-size: 0.3rem;
+}
+.informationBox label .englishName{
+   margin-left: 0.2rem;
+}
+.informationBox input{
+    padding-left: 0.2rem;
+    width: 8rem;
+    height: 0.8rem;
+    border: 0.01rem solid #000;
+    margin-top: 0.2rem;
+ }
+ .informationBox .star{
+   margin-left: 0.2rem;
+ }
+ .submit{
+    width: 4rem;
+    height: 1.2rem;
+    background: #1089ee;
+    color: #ffffff;
+    text-align: center;
+    border-radius:10px;
+    margin: 0.5rem 1.5rem;
+ }
+ .container4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.weima_box{
+    width: 205px;
+    height: 205px;
+    margin-top:2rem;
+    margin-left: 2rem;
+}
+.qrcodeTips{
+    width: 100%;
+    height:auto;
+    margin-top: 1rem;
+}
+.qrcodeTips img{
+    width: 100%;
+    height:auto;
+}
+.prizeTimes{
+    margin-top: 3rem;
+}
+.prizeTimes img{
+    width: 100%;
+    height:auto;
+}
