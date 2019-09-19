@@ -2,9 +2,26 @@ $(function(){
     $(".resgiterBtn").click(function(){
         $(".container2").show();
     })
+    const windowHeight = window.innerHeight
+    $("input").addEventListener('blur', function () {
+        let windowFocusHeight = window.innerHeight
+        if (windowHeight == windowFocusHeight) {
+        return
+        }
+        console.log(windowHeight + '--' + windowFocusHeight);
+        console.log('修复');
+        let currentPosition;
+        let speed = 1; //页面滚动距离
+        currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        currentPosition -= speed;
+        window.scrollTo(0, currentPosition); //页面向上滚动
+        currentPosition += speed; //speed变量
+        window.scrollTo(0, currentPosition); //页面向下滚动
+    })
     $(".agreeBtn").click(function(){
         $(".container1").hide();
         $(".container2").hide();
+        $(".container3").show();
     })
     $(".submit").click(function(){
         // console.log($("form").serialize());
