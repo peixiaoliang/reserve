@@ -2,22 +2,35 @@ $(function(){
     $(".resgiterBtn").click(function(){
         $(".container2").show();
     })
-    const windowHeight = window.innerHeight
-    $("input").addEventListener('blur', function () {
-        let windowFocusHeight = window.innerHeight
-        if (windowHeight == windowFocusHeight) {
-        return
-        }
-        console.log(windowHeight + '--' + windowFocusHeight);
-        console.log('修复');
-        let currentPosition;
-        let speed = 1; //页面滚动距离
-        currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-        currentPosition -= speed;
-        window.scrollTo(0, currentPosition); //页面向上滚动
-        currentPosition += speed; //speed变量
-        window.scrollTo(0, currentPosition); //页面向下滚动
-    })
+    const windowHeight = window.innerHeight;
+    var names=document.getElementById("name");
+    var phones=document.getElementById("phone");
+    var brands=document.getElementById("brand");
+    var jobs=document.getElementById("job");
+    var companys=document.getElementById("company");
+    tagNames(names);
+    tagNames(phones);
+    tagNames(brands);
+    tagNames(jobs);
+    tagNames(companys);
+    function tagNames(tags){
+        tags.addEventListener('blur', function () {
+            let windowFocusHeight = window.innerHeight
+            if (windowHeight == windowFocusHeight) {
+            return
+            }
+            console.log(windowHeight + '--' + windowFocusHeight);
+            console.log('修复');
+            let currentPosition;
+            let speed = 1; //页面滚动距离
+            currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            currentPosition -= speed;
+            window.scrollTo(0, currentPosition); //页面向上滚动
+            currentPosition += speed; //speed变量
+            window.scrollTo(0, currentPosition); //页面向下滚动
+        })
+    }
+   
     $(".agreeBtn").click(function(){
         $(".container1").hide();
         $(".container2").hide();
