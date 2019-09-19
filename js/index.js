@@ -30,7 +30,28 @@ $(function(){
             window.scrollTo(0, currentPosition); //页面向下滚动
         })
     }
-   
+    function GetQueryString(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var sloe=GetQueryString("openid");
+    function getNowFormatDate() {
+        var date = new Date();
+        var seperator1 = "";
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+         datetime = year + seperator1 + month + seperator1 + strDate;
+        return datetime;
+    }
+    getNowFormatDate()
     $(".agreeBtn").click(function(){
         $(".container1").hide();
         $(".container2").hide();
@@ -61,11 +82,16 @@ $(function(){
             return false;
         }
         $.ajax({
-            url: './php/index.php?'+formData,
+            url: './php/index.php?openid='+sloe+"&"+formData,
             async: false,
             type: 'post',
             success: function(data){
                 console.log(data)
+                var data=eval('(' + data + ')'); 
+                init(data.qrcodeNum);
+                $(".container3").hide();
+                $(".container4").show();
+                 
             }
         })
     })
@@ -82,9 +108,9 @@ $(function(){
       
         });  
     } 
-    init(); 
-    function init() {  
-        generateQRCode("canvas",205, 205, "http://www.baidu.com");  
+    function init(data) {  
+        generateQRCode("canvas",205, 205, "http://www.baidu.com?openid="+data+'&datetime='+datetime);  
+        console.log("http://www.baidu.com?openid="+data+'&datetime='+datetime)
     }
     function utf16to8(str) {  
         var out, i, len, c;  
