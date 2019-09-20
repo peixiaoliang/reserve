@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url(style.css);
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.riddle_content{
+    width: 100%;
+    height: 100%;
+}
+.riddle_content .riddles_duijiang{
+  width: 100%;
+	height: 100%;
+  background:#dddddd;
+	background-size: 100% 100%;
+	position: relative;
+}
+.riddles_duijiang .riddles_title{
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+}
+.riddles_duijiang .riddles_title img{
+    width: 100%;
+    height: auto;
+}
+.riddles_duijiang .yanzheng{
+	width: 100%;
+	height: 1.6rem;
+}
+ .riddles_duijiang .yanzheng .yanzheng_box{
+ 	width: 8.77rem;
+ 	height: 1.6rem;
+ 	margin:0 auto;
+ 	position: absolute;
+ 	top: 50%;
+ 	left:50%;
+ 	margin-left: -4.385rem;
+ }
+ .riddles_duijiang .yanzheng .number{
+  	width: 6.3rem;
+    height: 1.6rem;
+    color: #7D3F18;
+    float: left;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background: #ffffff;
+    padding-left: 0.6rem;
+  }
+.number::-webkit-input-placeholder{
+        color: #333333;
+        font-size: 0.4rem;
+}
+.number::-moz-placeholder{  
+        color: #333333; 
+        font-size: 0.4rem;
+}
+.number:-ms-input-placeholder{ 
+        color: #333333;
+        font-size: 0.4rem;
+}
+.riddles_duijiang .yanzheng .yanzheng_btn{
+	width: 2.47rem;
+	height: 1.6rem;
+	background:url(../images/verify_btm.png) no-repeat;
+ 	background-size: 100% 100%;
+ 	float: left;
+  }
+  .riddles_duijiang .yanzheng .yan_tips {
+    width: 6.13rem;
+    height: 0.53rem;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    margin-left: -4.185rem;
+    margin-top: 0.2rem;
+    color: #333333;
+    font-size: 0.4rem;
+    display: none;
+  }
+  .example{
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+    display: none;
+  }
+  .expried {
+    width:2.4rem;
+    height: 2.7rem;
+    margin: 0 auto;
+  }
+  .expried img{
+    width:2.4rem;
+    height: 2.7rem;
+    margin-top:3.5rem;
+  }
+  .texttips{
+    color: #333333;
+    font-size: .7rem;
+    font-weight: bold;
+    margin-top: 0.4rem;
+  }
+  .prizeText{
+    color: #333333;
+    font-size: .5rem;
+    font-weight: bold;
+    margin-top:3.8rem;
+  }
