@@ -1,6 +1,7 @@
 $(function(){
     $(".resgiterBtn").click(function(){
-        $(".container2").show();
+        $(".container1").hide();
+        $(".container3").show();
     })
     const windowHeight = window.innerHeight;
     var names=document.getElementById("name");
@@ -52,14 +53,7 @@ $(function(){
         return datetime;
     }
     getNowFormatDate()
-    $(".agreeBtn").click(function(){
-        $(".container1").hide();
-        $(".container2").hide();
-        $(".container3").show();
-    })
     $(".submit").click(function(){
-        // console.log($("form").serialize());
-        // console.log($("form").serialize());
         var formData=$("form").serialize();
         if($("form input[name='name']").val().length<2){
             alert("请输入正确的名字");
@@ -86,9 +80,8 @@ $(function(){
             async: false,
             type: 'post',
             success: function(data){
-                console.log(data)
                 var data=eval('(' + data + ')'); 
-                init(data.qrcodeNum);
+                init(data.qrcode);
                 $(".container3").hide();
                 $(".container4").show();
                  
@@ -109,8 +102,7 @@ $(function(){
         });  
     } 
     function init(data) {  
-        generateQRCode("canvas",205, 205, "http://www.baidu.com?openid="+data+'&datetime='+datetime);  
-        console.log("http://www.baidu.com?openid="+data+'&datetime='+datetime)
+        generateQRCode("canvas",205, 205, "http://www.baidu.com?qrcode="+data+'&openid='+sloe);  
     }
     function utf16to8(str) {  
         var out, i, len, c;  

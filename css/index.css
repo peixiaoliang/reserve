@@ -18,6 +18,15 @@
     width: 100%;
     height: auto;
 }
+.rules{
+    width: 100%;
+    height:auto;
+    margin-top:0.5rem;
+}
+.rules img{
+    width: 100%;
+    height: auto;
+}
 .resgiterBtn{
     width: 6rem;
     height: 1.2rem;

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url(style.css);
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height:auto;
+    background: #000000;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+.weima_box{
+    width: 205px;
+    height: 205px;
+    margin-top:2rem;
+    margin-left: 2rem;
+}
+.qrcodeTips{
+    width: 100%;
+    height:auto;
+    margin-top: 1rem;
+}
+.qrcodeTips img{
+    width: 100%;
+    height:auto;
+}
+.prizeTimes{
+    margin-top: 3rem;
+}
+.prizeTimes img{
+    width: 100%;
+    height:auto;
+}
