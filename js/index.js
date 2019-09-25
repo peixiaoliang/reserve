@@ -76,7 +76,7 @@ $(function(){
             return false;
         }
         $.ajax({
-            url: './php/index.php?openid='+sloe+"&"+formData,
+            url: './php/register.php?openid='+sloe+"&"+formData,
             async: false,
             type: 'post',
             success: function(data){
@@ -102,7 +102,7 @@ $(function(){
         });  
     } 
     function init(data) {  
-        generateQRCode("canvas",205, 205, "http://www.baidu.com?qrcode="+data+'&openid='+sloe);  
+        generateQRCode("canvas", 205, 205, "http://invitation.citymsg.cn/info/duijiang.html?qrcode="+data+'&openid='+sloe);  
     }
     function utf16to8(str) {  
         var out, i, len, c;  

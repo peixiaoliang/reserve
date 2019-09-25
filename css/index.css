@@ -28,16 +28,17 @@
     height: auto;
 }
 .resgiterBtn{
-    width: 6rem;
-    height: 1.2rem;
-    background: #1089ee;
+    width: 3rem;
+    height: 1rem;
     position: absolute;
     bottom: 0.6rem;
     left: 50%;
-    margin-left:-3rem;
-    color: #ffffff;
+    margin-left:-1.5rem;
+    color: #000000;
+    border:3px solid #000000;
     text-align: center;
-    border-radius:10px;
+    background: #ffffff;
+    font-weight: bolder;
 }
 .container2{
     width: 100%;
@@ -58,38 +59,42 @@
     left: 50%;
 }
 .agreeBtn{
-    width: 4rem;
-    height: 1.2rem;
-    background: #1089ee;
+    width: 3rem;
+    height: 1rem;
     position: absolute;
-    bottom: 0.3rem;
+    bottom: 0.6rem;
     left: 50%;
-    margin-left:-2rem;
-    color: #ffffff;
+    margin-left:-1.5rem;
+    color: #000000;
+    border:2px solid #000000;
     text-align: center;
-    border-radius:10px;
+    background: #ffffff;
+    font-weight: bolder;
 }
 .container3{
     width: 100%;
     height: auto;
     position: relative;
     display: none;
+    overflow: auto;
 }
 .xuqiu{
     width: 100%;
     height:auto;
+    text-align: center;
     margin-top: 0.6rem;
 }
 .xuqiu img{
-    width: 100%;
-    height:auto;
+    width: 8.61rem;
+    height:2.72rem;
 }
 .personal_title{
     padding: 0 0.5rem;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin:1rem 0.5rem 0.3rem; 
     font-weight: bolder;
-
+	border-left: 1px solid #000;
+	margin-left:1rem;
 }
 .informationForm{
     padding: 0 1rem;
@@ -110,40 +115,47 @@
  .informationBox .star{
    margin-left: 0.2rem;
  }
+ .submitBtn{
+     width: 100%;
+     height: auto;
+     margin:1rem auto 1.5rem;
+     text-align: center;
+ }
  .submit{
-    width: 4rem;
-    height: 1.2rem;
-    background: #1089ee;
-    color: #ffffff;
-    text-align: center;
-    border-radius:10px;
-    margin: 0.5rem 1.5rem;
+    width: 3rem;
+    height: 1rem;
+    color: #000000;
+    border:3px solid #000000;
+    background: #ffffff;
+    font-weight: bolder;
  }
  .container4{
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     display: none;
+    overflow: auto;
 }
 .weima_box{
     width: 205px;
     height: 205px;
-    margin-top:2rem;
-    margin-left: 2rem;
+    margin:2rem auto;
 }
 .qrcodeTips{
     width: 100%;
     height:auto;
-    margin-top: 1rem;
+    margin-top: -1rem;
 }
 .qrcodeTips img{
     width: 100%;
     height:auto;
 }
 .prizeTimes{
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 .prizeTimes img{
-    width: 100%;
-    height:auto;
+    width: 5.41rem;
+    height:2.93rem;
 }

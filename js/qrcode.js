@@ -20,9 +20,9 @@ $(function(){
       
         });  
     } 
-    function init(data) {  
-        generateQRCode("canvas",205, 205, "http://www.baidu.com?qrcode="+data+'&openid='+openid);
-        console.log("http://www.baidu.com?qrcode="+data+'&openid='+openid)  
+    function init(code) {  
+        generateQRCode("canvas", 205, 205, "http://invitation.citymsg.cn/info/duijiang.html?qrcode=" + code+'&openid='+openid);
+        console.log("http://invitation.citymsg.cn/info/duijiang.html?qrcode=" + code+'&openid='+openid)  
     }
     function utf16to8(str) {  
         var out, i, len, c;  
